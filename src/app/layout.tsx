@@ -5,6 +5,31 @@ export const metadata: Metadata = {
   description: 'A simple project management tool',
 }
 
+function Footer() {
+  return (
+    <footer style={{ background: '#1a1a2e', color: '#999', padding: '48px 32px', marginTop: 80, display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 32, maxWidth: 900, margin: '80px auto 0' }}>
+      <div>
+        <h4 style={{ color: '#fff', marginBottom: 12 }}>Product</h4>
+        <a href="/" style={{ color: '#999', textDecoration: 'none', display: 'block', marginBottom: 8 }}>Home</a>
+        <a href="/pricing" style={{ color: '#999', textDecoration: 'none', display: 'block', marginBottom: 8 }}>Pricing</a>
+        <a href="/about" style={{ color: '#999', textDecoration: 'none', display: 'block', marginBottom: 8 }}>About</a>
+      </div>
+      <div>
+        <h4 style={{ color: '#fff', marginBottom: 12 }}>Resources</h4>
+        <a href="#" style={{ color: '#999', textDecoration: 'none', display: 'block', marginBottom: 8 }}>Documentation</a>
+        <a href="#" style={{ color: '#999', textDecoration: 'none', display: 'block', marginBottom: 8 }}>API Reference</a>
+        <a href="#" style={{ color: '#999', textDecoration: 'none', display: 'block', marginBottom: 8 }}>Changelog</a>
+      </div>
+      <div>
+        <h4 style={{ color: '#fff', marginBottom: 12 }}>Company</h4>
+        <a href="#" style={{ color: '#999', textDecoration: 'none', display: 'block', marginBottom: 8 }}>Blog</a>
+        <a href="#" style={{ color: '#999', textDecoration: 'none', display: 'block', marginBottom: 8 }}>Careers</a>
+        <a href="mailto:hello@testapp.com" style={{ color: '#999', textDecoration: 'none', display: 'block', marginBottom: 8 }}>Contact</a>
+      </div>
+    </footer>
+  )
+}
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
@@ -18,6 +43,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </div>
         </nav>
         <main>{children}</main>
+        <Footer />
       </body>
     </html>
   )
