@@ -44,7 +44,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </div>
           </div>
           <div style={{ maxWidth: 800, margin: '0 auto', marginTop: 32, paddingTop: 16, borderTop: '1px solid #333', color: '#666', fontSize: '0.85rem' }}>
-            © 2026 TestApp. All rights reserved.
+            © 2024-2026 TestApp. All rights reserved.
           </div>
         </footer>
       </body>
