@@ -18,6 +18,35 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </div>
         </nav>
         <main>{children}</main>
+        <footer style={{ background: '#1a1a2e', color: '#fff', padding: '48px 32px', marginTop: 80 }}>
+          <div style={{ maxWidth: 800, margin: '0 auto', display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: 32 }}>
+            <div>
+              <h3 style={{ marginBottom: 12 }}>TestApp</h3>
+              <p style={{ color: '#aaa', maxWidth: 280 }}>Ship projects faster with the simplest project management tool for modern teams.</p>
+            </div>
+            <div style={{ display: 'flex', gap: 48 }}>
+              <div>
+                <h4 style={{ marginBottom: 8, fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Follow us</h4>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+                  <a href="https://twitter.com/testapp" style={{ color: '#aaa', textDecoration: 'none' }}>Twitter</a>
+                  <a href="https://github.com/testapp" style={{ color: '#aaa', textDecoration: 'none' }}>GitHub</a>
+                  <a href="https://linkedin.com/company/testapp" style={{ color: '#aaa', textDecoration: 'none' }}>LinkedIn</a>
+                  <a href="https://discord.gg/testapp" style={{ color: '#aaa', textDecoration: 'none' }}>Discord</a>
+                </div>
+              </div>
+              <div>
+                <h4 style={{ marginBottom: 8, fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Legal</h4>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+                  <a href="/privacy" style={{ color: '#aaa', textDecoration: 'none' }}>Privacy Policy</a>
+                  <a href="/terms" style={{ color: '#aaa', textDecoration: 'none' }}>Terms of Service</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style={{ maxWidth: 800, margin: '0 auto', marginTop: 32, paddingTop: 16, borderTop: '1px solid #333', color: '#666', fontSize: '0.85rem' }}>
+            © 2026 TestApp. All rights reserved.
+          </div>
+        </footer>
       </body>
     </html>
   )
