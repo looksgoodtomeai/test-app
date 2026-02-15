@@ -14,7 +14,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <a href="/about" style={{ color: '#ccc', textDecoration: 'none' }}>About</a>
           <a href="/pricing" style={{ color: '#ccc', textDecoration: 'none' }}>Pricing</a>
           <div style={{ marginLeft: 'auto' }}>
-            <a href="/pricing" style={{ background: '#6c63ff', color: '#fff', padding: '8px 20px', borderRadius: '6px', textDecoration: 'none' }}>Get Started</a>
+            <a href="/pricing" style={{ background: '#6c63ff', color: '#fff', padding: '8px 20px', borderRadius: '6px', textDecoration: 'none', fontWeight: 600 }}>Start Free →</a>
           </div>
         </nav>
         <main>{children}</main>

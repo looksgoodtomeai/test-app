@@ -1,14 +1,15 @@
 const plans = [
-  { name: 'Free', price: '$0', period: '/mo', desc: 'For side projects', features: ['3 projects', '2 team members', 'Basic boards', 'Community support'], cta: 'Get Started' },
-  { name: 'Pro', price: '$12', period: '/user/mo', desc: 'For growing teams', features: ['Unlimited projects', 'Unlimited members', 'Sprint analytics', 'Priority support', 'GitHub integration'], cta: 'Start Free Trial', featured: true },
-  { name: 'Enterprise', price: 'Custom', period: '', desc: 'For large organizations', features: ['Everything in Pro', 'SSO & SAML', 'Audit logs', 'Dedicated account manager', '99.9% SLA'], cta: 'Contact Sales' },
+  { name: 'Starter', price: '$0', period: '/mo', desc: 'For individuals & side projects', features: ['5 projects', '3 team members', 'Basic boards', 'Kanban & list views', 'Community support'], cta: 'Get Started Free' },
+  { name: 'Team', price: '$8', period: '/user/mo', desc: 'For teams shipping weekly', features: ['Unlimited projects', 'Unlimited members', 'Sprint analytics & burndown', 'Priority support', 'GitHub & GitLab integration', 'Custom fields'], cta: 'Start 14-Day Trial', featured: true },
+  { name: 'Business', price: '$18', period: '/user/mo', desc: 'For scaling organizations', features: ['Everything in Team', 'SSO & SAML', 'Audit logs', 'Advanced permissions', 'API access', '99.9% SLA'], cta: 'Start 14-Day Trial' },
+  { name: 'Enterprise', price: 'Custom', period: '', desc: 'For large enterprises', features: ['Everything in Business', 'Dedicated infrastructure', 'Custom integrations', 'Dedicated account manager', 'On-premise option'], cta: 'Contact Sales' },
 ]
 
 export default function Pricing() {
   return (
     <div style={{ maxWidth: 900, margin: '0 auto', padding: '64px 24px', textAlign: 'center' }}>
-      <h1 style={{ marginBottom: 8 }}>Simple, transparent pricing</h1>
-      <p style={{ color: '#555', marginBottom: 48 }}>No hidden fees. Cancel anytime.</p>
+      <h1 style={{ marginBottom: 8 }}>Plans that grow with your team</h1>
+      <p style={{ color: '#555', marginBottom: 48 }}>Start free, upgrade when you're ready. No hidden fees.</p>
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 24 }}>
         {plans.map((plan) => (
           <div key={plan.name} style={{

@@ -8,7 +8,7 @@ export default function Home() {
       </p>
       <div style={{ display: 'flex', gap: 16 }}>
         <a href="/pricing" style={{ background: '#6c63ff', color: '#fff', padding: '12px 28px', borderRadius: '8px', textDecoration: 'none', fontWeight: 600 }}>
-          Start Free Trial
+          Start Free — No Card Required
         </a>
         <a href="/about" style={{ border: '2px solid #6c63ff', color: '#6c63ff', padding: '12px 28px', borderRadius: '8px', textDecoration: 'none', fontWeight: 600 }}>
           Learn More
