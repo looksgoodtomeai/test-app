@@ -2,7 +2,7 @@ export default function Home() {
   return (
     <div style={{ maxWidth: 800, margin: '0 auto', padding: '64px 24px' }}>
       <h1 style={{ fontSize: '3rem', marginBottom: 16 }}>Ship projects faster</h1>
-      <p style={{ fontSize: '1.25rem', color: '#555', marginBottom: 32 }}>
+      <p style={{ fontSize: '1.25rem', color: '#aaa', marginBottom: 32 }}>
         TestApp helps teams track tasks, manage sprints, and deliver on time.
         Simple, fast, no bloat.
       </p>
@@ -23,9 +23,9 @@ export default function Home() {
             { title: 'Time Tracking', desc: 'Built-in timers so you know where hours go.' },
             { title: 'Integrations', desc: 'Connect GitHub, Slack, Figma, and 50+ tools.' },
           ].map((f) => (
-            <div key={f.title} style={{ background: '#fff', padding: 24, borderRadius: 12, boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }}>
+            <div key={f.title} style={{ background: '#1a1a2e', padding: 24, borderRadius: 12, boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }}>
               <h3>{f.title}</h3>
-              <p style={{ color: '#666', marginTop: 8 }}>{f.desc}</p>
+              <p style={{ color: '#999', marginTop: 8 }}>{f.desc}</p>
             </div>
           ))}
         </div>
