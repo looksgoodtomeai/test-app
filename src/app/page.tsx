@@ -30,6 +30,24 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+      <section style={{ marginTop: 80 }}>
+        <h2 style={{ marginBottom: 32, textAlign: 'center' }}>What our users say</h2>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 24 }}>
+          {[
+            { name: 'Sarah Chen', role: 'Engineering Lead at Acme', quote: 'TestApp cut our sprint planning time in half. The velocity tracking alone is worth it.' },
+            { name: 'Marcus Johnson', role: 'CTO at StartupCo', quote: 'We switched from Jira and never looked back. Simple, fast, and the team actually enjoys using it.' },
+            { name: 'Emily Park', role: 'PM at DesignStudio', quote: 'The GitHub integration is seamless. PRs automatically link to tasks — no manual updates.' },
+            { name: 'David Kim', role: 'Founder at DevShop', quote: 'Best project management tool for small teams. Period.' },
+          ].map((t) => (
+            <div key={t.name} style={{ background: '#f8f9fa', padding: 24, borderRadius: 12, borderLeft: '4px solid #6c63ff' }}>
+              <p style={{ fontStyle: 'italic', color: '#333', marginBottom: 12 }}>&ldquo;{t.quote}&rdquo;</p>
+              <p style={{ fontWeight: 600, marginBottom: 2 }}>{t.name}</p>
+              <p style={{ color: '#888', fontSize: '0.875rem' }}>{t.role}</p>
+            </div>
+          ))}
+        </div>
+      </section>
     </div>
   )
 }
