@@ -1,14 +1,14 @@
 const plans = [
-  { name: 'Free', price: '$0', period: '/mo', desc: 'For side projects', features: ['3 projects', '2 team members', 'Basic boards', 'Community support'], cta: 'Get Started' },
-  { name: 'Pro', price: '$12', period: '/user/mo', desc: 'For growing teams', features: ['Unlimited projects', 'Unlimited members', 'Sprint analytics', 'Priority support', 'GitHub integration'], cta: 'Start Free Trial', featured: true },
-  { name: 'Enterprise', price: 'Custom', period: '', desc: 'For large organizations', features: ['Everything in Pro', 'SSO & SAML', 'Audit logs', 'Dedicated account manager', '99.9% SLA'], cta: 'Contact Sales' },
+  { name: 'Starter', price: '$0', period: '/mo', desc: 'For individuals & side projects', features: ['3 projects', '2 team members', 'Basic boards', 'Community support', '1GB storage'], cta: 'Get Started Free' },
+  { name: 'Pro', price: '$19', period: '/user/mo', desc: 'For teams that move fast', features: ['Unlimited projects', 'Unlimited members', 'Sprint analytics', 'Priority support', 'GitHub & GitLab integration', '50GB storage'], cta: 'Start 14-Day Trial', featured: true },
+  { name: 'Enterprise', price: 'Custom', period: '', desc: 'For large organizations', features: ['Everything in Pro', 'SSO & SAML', 'Audit logs', 'Dedicated account manager', '99.9% SLA', 'Unlimited storage'], cta: 'Contact Sales' },
 ]
 
 export default function Pricing() {
   return (
     <div style={{ maxWidth: 900, margin: '0 auto', padding: '64px 24px', textAlign: 'center' }}>
-      <h1 style={{ marginBottom: 8 }}>Simple, transparent pricing</h1>
-      <p style={{ color: '#555', marginBottom: 48 }}>No hidden fees. Cancel anytime.</p>
+      <h1 style={{ marginBottom: 8 }}>Plans that scale with you</h1>
+      <p style={{ color: '#555', marginBottom: 48 }}>Start free, upgrade when you need to. No hidden fees.</p>
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 24 }}>
         {plans.map((plan) => (
           <div key={plan.name} style={{
