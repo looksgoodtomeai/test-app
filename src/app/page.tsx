@@ -3,7 +3,7 @@ export default function Home() {
     <div style={{ maxWidth: 800, margin: '0 auto', padding: '64px 24px' }}>
       <h1 style={{ fontSize: '3rem', marginBottom: 16 }}>Ship projects faster</h1>
       <p style={{ fontSize: '1.25rem', color: '#555', marginBottom: 32 }}>
-        TestApp helps teams track tasks, manage sprints, and deliver on time.
+        TaskFlow helps teams track tasks, manage sprints, and deliver on time.
         Simple, fast, no bloat.
       </p>
       <div style={{ display: 'flex', gap: 16 }}>
