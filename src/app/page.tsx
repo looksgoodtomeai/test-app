@@ -10,6 +10,7 @@ export default function Home() {
         <a href="/pricing" style={{ background: '#6c63ff', color: '#fff', padding: '12px 28px', borderRadius: '8px', textDecoration: 'none', fontWeight: 600 }}>
           Start Free Trial
         </a>
+        <a href="/features" style={{ border: "2px solid #6c63ff", color: "#6c63ff", padding: "12px 28px", borderRadius: "8px", textDecoration: "none", fontWeight: 600 }}>Features</a>
         <a href="/about" style={{ border: '2px solid #6c63ff', color: '#6c63ff', padding: '12px 28px', borderRadius: '8px', textDecoration: 'none', fontWeight: 600 }}>
           Learn More
         </a>
