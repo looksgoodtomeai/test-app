@@ -1,38 +1,31 @@
-const plans = [
-  { name: 'Free', price: '$0', period: '/mo', desc: 'For side projects', features: ['3 projects', '2 team members', 'Basic boards', 'Community support'], cta: 'Get Started' },
-  { name: 'Pro', price: '$12', period: '/user/mo', desc: 'For growing teams', features: ['Unlimited projects', 'Unlimited members', 'Sprint analytics', 'Priority support', 'GitHub integration'], cta: 'Start Free Trial', featured: true },
-  { name: 'Enterprise', price: 'Custom', period: '', desc: 'For large organizations', features: ['Everything in Pro', 'SSO & SAML', 'Audit logs', 'Dedicated account manager', '99.9% SLA'], cta: 'Contact Sales' },
-]
-
 export default function Pricing() {
+  const plans = [
+    { name: "Starter", price: "Free", features: ["1 project", "30 runs/mo", "Community support"] },
+    { name: "Team", price: "$8/user/mo", features: ["5 projects", "500 runs/mo", "Priority support", "Custom journeys"] },
+    { name: "Business", price: "$20/user/mo", features: ["Unlimited projects", "2000 runs/mo", "SSO", "Dedicated support", "SLA"] },
+    { name: "Enterprise", price: "Custom", features: ["Everything in Business", "On-prem option", "Custom integrations", "24/7 support"] },
+  ];
+
   return (
-    <div style={{ maxWidth: 900, margin: '0 auto', padding: '64px 24px', textAlign: 'center' }}>
-      <h1 style={{ marginBottom: 8 }}>Simple, transparent pricing</h1>
-      <p style={{ color: '#555', marginBottom: 48 }}>No hidden fees. Cancel anytime.</p>
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 24 }}>
+    <main style={{ padding: "2rem", maxWidth: "1000px", margin: "0 auto" }}>
+      <h1 style={{ fontSize: "2rem", marginBottom: "1rem" }}>Pricing</h1>
+      <p style={{ marginBottom: "2rem", color: "#666" }}>Simple, transparent pricing for teams of all sizes.</p>
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "1.5rem" }}>
         {plans.map((plan) => (
-          <div key={plan.name} style={{
-            background: plan.featured ? '#1a1a2e' : '#fff',
-            color: plan.featured ? '#fff' : '#1a1a2e',
-            padding: 32, borderRadius: 16,
-            boxShadow: plan.featured ? '0 8px 32px rgba(108,99,255,0.3)' : '0 1px 3px rgba(0,0,0,0.1)',
-            display: 'flex', flexDirection: 'column' as const,
-          }}>
-            <h3 style={{ marginBottom: 8 }}>{plan.name}</h3>
-            <div style={{ fontSize: '2.5rem', fontWeight: 700 }}>{plan.price}<span style={{ fontSize: '1rem', fontWeight: 400 }}>{plan.period}</span></div>
-            <p style={{ opacity: 0.7, marginBottom: 24 }}>{plan.desc}</p>
-            <ul style={{ textAlign: 'left', listStyle: 'none', padding: 0, marginBottom: 24, flex: 1 }}>
-              {plan.features.map((f) => <li key={f} style={{ padding: '6px 0' }}>✓ {f}</li>)}
+          <div key={plan.name} style={{ border: "1px solid #eee", borderRadius: "12px", padding: "1.5rem" }}>
+            <h2 style={{ fontSize: "1.25rem" }}>{plan.name}</h2>
+            <p style={{ fontSize: "1.5rem", fontWeight: "bold", margin: "0.5rem 0" }}>{plan.price}</p>
+            <ul style={{ listStyle: "none", padding: 0 }}>
+              {plan.features.map((f) => (
+                <li key={f} style={{ padding: "0.25rem 0", color: "#444" }}>✓ {f}</li>
+              ))}
             </ul>
-            <a href="#" style={{
-              background: plan.featured ? '#6c63ff' : 'transparent',
-              border: `2px solid ${plan.featured ? '#6c63ff' : '#6c63ff'}`,
-              color: plan.featured ? '#fff' : '#6c63ff',
-              padding: '12px 24px', borderRadius: 8, textDecoration: 'none', fontWeight: 600,
-            }}>{plan.cta}</a>
+            <button style={{ marginTop: "1rem", padding: "0.5rem 1rem", background: "#0070f3", color: "white", border: "none", borderRadius: "6px", cursor: "pointer", width: "100%" }}>
+              Get Started
+            </button>
           </div>
         ))}
       </div>
-    </div>
-  )
+    </main>
+  );
 }
