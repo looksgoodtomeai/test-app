@@ -22,7 +22,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div style={{ maxWidth: 800, margin: '0 auto', display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: 32 }}>
             <div>
               <h3 style={{ marginBottom: 12 }}>TestApp</h3>
-              <p style={{ color: '#aaa', maxWidth: 280 }}>Build projects faster with the simplest project management tool for modern teams.</p>
+              <p style={{ color: '#aaa', maxWidth: 280 }}>Launch projects faster with the simplest project management tool for modern teams.</p>
             </div>
             <div style={{ display: 'flex', gap: 48 }}>
               <div>
