@@ -13,6 +13,9 @@ export default function Home() {
         <a href="/about" style={{ border: '2px solid #6c63ff', color: '#6c63ff', padding: '12px 28px', borderRadius: '8px', textDecoration: 'none', fontWeight: 600 }}>
           Learn More
         </a>
+        <a href="/docs" style={{ color: '#6c63ff', padding: '12px 28px', textDecoration: 'none', fontWeight: 600 }}>
+          📚 Documentation
+        </a>
       </div>
 
       <section style={{ marginTop: 80 }}>
