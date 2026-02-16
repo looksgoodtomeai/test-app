@@ -22,6 +22,7 @@ export default function Home() {
             { title: 'Sprint Planning', desc: 'Drag-and-drop sprint boards with velocity tracking.' },
             { title: 'Time Tracking', desc: 'Built-in timers so you know where hours go.' },
             { title: 'Integrations', desc: 'Connect GitHub, Slack, Figma, and 50+ tools.' },
+            { title: 'Analytics', desc: 'Real-time dashboards with team velocity and burndown charts.' },
           ].map((f) => (
             <div key={f.title} style={{ background: '#fff', padding: 24, borderRadius: 12, boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }}>
               <h3>{f.title}</h3>
