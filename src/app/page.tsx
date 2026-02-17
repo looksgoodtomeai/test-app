@@ -19,7 +19,7 @@ export default function Home() {
         <h2 style={{ marginBottom: 24 }}>Why teams love TestApp</h2>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 24 }}>
           {[
-            { title: 'Sprint Planning', desc: 'Drag-and-drop sprint boards with velocity tracking.' },
+            { title: 'Kanban Boards', desc: 'Visual kanban boards with drag-and-drop and WIP limits.' },
             { title: 'Time Tracking', desc: 'Built-in timers so you know where hours go.' },
             { title: 'Integrations', desc: 'Connect GitHub, Slack, Figma, and 50+ tools.' },
           ].map((f) => (
