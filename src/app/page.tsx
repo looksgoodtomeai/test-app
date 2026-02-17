@@ -1,14 +1,14 @@
 export default function Home() {
   return (
     <div style={{ maxWidth: 800, margin: '0 auto', padding: '64px 24px' }}>
-      <h1 style={{ fontSize: '3rem', marginBottom: 16 }}>Ship projects faster</h1>
+      <h1 style={{ fontSize: '3rem', marginBottom: 16 }}>Ship projects 10x faster</h1>
       <p style={{ fontSize: '1.25rem', color: '#555', marginBottom: 32 }}>
         TestApp helps teams track tasks, manage sprints, and deliver on time.
         Simple, fast, no bloat.
       </p>
       <div style={{ display: 'flex', gap: 16 }}>
         <a href="/pricing" style={{ background: '#6c63ff', color: '#fff', padding: '12px 28px', borderRadius: '8px', textDecoration: 'none', fontWeight: 600 }}>
-          Start Free Trial
+          Get Started Free
         </a>
         <a href="/about" style={{ border: '2px solid #6c63ff', color: '#6c63ff', padding: '12px 28px', borderRadius: '8px', textDecoration: 'none', fontWeight: 600 }}>
           Learn More
