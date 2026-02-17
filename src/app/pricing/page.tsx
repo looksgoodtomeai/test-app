@@ -8,7 +8,7 @@ export default function Pricing() {
   return (
     <div style={{ maxWidth: 900, margin: '0 auto', padding: '64px 24px', textAlign: 'center' }}>
       <h1 style={{ marginBottom: 8 }}>Simple, transparent pricing</h1>
-      <p style={{ color: '#555', marginBottom: 48 }}>No hidden fees. Cancel anytime.</p>
+      <p style={{ color: '#555', marginBottom: 48 }}>No surprises. No contracts. Cancel anytime.</p>
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 24 }}>
         {plans.map((plan) => (
           <div key={plan.name} style={{

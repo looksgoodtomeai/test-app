@@ -16,7 +16,7 @@ export default function Home() {
       </div>
 
       <section style={{ marginTop: 80 }}>
-        <h2 style={{ marginBottom: 24 }}>Why teams love TestApp</h2>
+        <h2 style={{ marginBottom: 24 }}>Why teams choose TestApp</h2>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 24 }}>
           {[
             { title: 'Sprint Planning', desc: 'Drag-and-drop sprint boards with velocity tracking.' },
