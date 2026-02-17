@@ -1,6 +1,6 @@
 const plans = [
   { name: 'Free', price: '$0', period: '/mo', desc: 'For side projects', features: ['3 projects', '2 team members', 'Basic boards', 'Community support'], cta: 'Get Started' },
-  { name: 'Pro', price: '$12', period: '/user/mo', desc: 'For growing teams', features: ['Unlimited projects', 'Unlimited members', 'Sprint analytics', 'Priority support', 'GitHub integration'], cta: 'Start Free Trial', featured: true },
+  { name: 'Pro', price: '$19', period: '/user/mo', desc: 'For growing teams', features: ['Unlimited projects', 'Unlimited members', 'Sprint analytics', 'Priority support', 'GitHub integration', 'Custom workflows'], cta: 'Start Free Trial', featured: true },
   { name: 'Enterprise', price: 'Custom', period: '', desc: 'For large organizations', features: ['Everything in Pro', 'SSO & SAML', 'Audit logs', 'Dedicated account manager', '99.9% SLA'], cta: 'Contact Sales' },
 ]
 
