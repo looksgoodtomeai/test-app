@@ -20,7 +20,7 @@ export default function Home() {
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 24 }}>
           {[
             { title: 'Sprint Planning', desc: 'Drag-and-drop sprint boards with velocity tracking.' },
-            { title: 'Time Tracking', desc: 'Built-in timers so you know where hours go.' },
+            { title: 'Resource Planning', desc: 'Allocate team capacity and track workload across projects.' },
             { title: 'Integrations', desc: 'Connect GitHub, Slack, Figma, and 50+ tools.' },
           ].map((f) => (
             <div key={f.title} style={{ background: '#fff', padding: 24, borderRadius: 12, boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }}>
