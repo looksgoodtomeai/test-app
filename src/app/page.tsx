@@ -7,10 +7,10 @@ export default function Home() {
         Simple, fast, no bloat.
       </p>
       <div style={{ display: 'flex', gap: 16 }}>
-        <a href="/pricing" style={{ background: '#6c63ff', color: '#fff', padding: '12px 28px', borderRadius: '8px', textDecoration: 'none', fontWeight: 600 }}>
+        <a href="/pricing" style={{ background: '#7c73ff', color: '#fff', padding: '12px 28px', borderRadius: '8px', textDecoration: 'none', fontWeight: 600 }}>
           Start Free Trial
         </a>
-        <a href="/about" style={{ border: '2px solid #6c63ff', color: '#6c63ff', padding: '12px 28px', borderRadius: '8px', textDecoration: 'none', fontWeight: 600 }}>
+        <a href="/about" style={{ border: '2px solid #7c73ff', color: '#7c73ff', padding: '12px 28px', borderRadius: '8px', textDecoration: 'none', fontWeight: 600 }}>
           Learn More
         </a>
       </div>
