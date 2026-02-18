@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body style={{ margin: 0, fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif', background: '#fafafa' }}>
+      <body style={{ margin: 0, scrollBehavior: 'smooth', fontFamily: "'Inter', system-ui, -apple-system, sans-serif", background: '#fafafa' }}>
         <nav style={{ background: '#1a1a2e', color: '#fff', padding: '16px 32px', display: 'flex', gap: '24px', alignItems: 'center' }}>
           <a href="/" style={{ color: '#fff', textDecoration: 'none', fontWeight: 700, fontSize: '1.25rem' }}>TestApp</a>
           <a href="/about" style={{ color: '#ccc', textDecoration: 'none' }}>About</a>
