@@ -30,6 +30,21 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+      <section style={{ marginTop: 80 }}>
+        <h2 style={{ marginBottom: 24, textAlign: 'center' }}>What our users say</h2>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 24 }}>
+          {[
+            { name: 'Sarah K.', role: 'Engineering Lead', quote: 'We cut our sprint planning time in half. TestApp just gets out of the way.' },
+            { name: 'Marcus R.', role: 'Startup Founder', quote: 'Finally a PM tool that doesn\'t feel like enterprise software from 2005.' },
+          ].map((t) => (
+            <div key={t.name} style={{ background: '#f8f8ff', padding: 24, borderRadius: 12, borderLeft: '4px solid #6c63ff' }}>
+              <p style={{ color: '#333', fontStyle: 'italic', marginBottom: 12 }}>&ldquo;{t.quote}&rdquo;</p>
+              <p style={{ color: '#666', fontSize: '0.875rem', margin: 0 }}><strong>{t.name}</strong> — {t.role}</p>
+            </div>
+          ))}
+        </div>
+      </section>
     </div>
   )
 }
