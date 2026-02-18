@@ -1,3 +1,5 @@
+import { CtaBanner } from './components/banner'
+
 export default function Home() {
   return (
     <div style={{ maxWidth: 800, margin: '0 auto', padding: '64px 24px' }}>
@@ -30,6 +32,7 @@ export default function Home() {
           ))}
         </div>
       </section>
+      <CtaBanner />
     </div>
   )
 }
