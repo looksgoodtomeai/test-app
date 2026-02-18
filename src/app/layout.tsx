@@ -18,6 +18,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </div>
         </nav>
         <main>{children}</main>
+        <footer style={{ background: '#1a1a2e', color: '#999', padding: '32px', textAlign: 'center', marginTop: '64px', fontSize: '0.875rem' }}>
+          <div style={{ display: 'flex', justifyContent: 'center', gap: '24px', marginBottom: '16px' }}>
+            <a href="/about" style={{ color: '#ccc', textDecoration: 'none' }}>About</a>
+            <a href="/pricing" style={{ color: '#ccc', textDecoration: 'none' }}>Pricing</a>
+            <a href="mailto:hello@testapp.dev" style={{ color: '#ccc', textDecoration: 'none' }}>Contact</a>
+          </div>
+          <p style={{ margin: 0 }}>© 2026 TestApp. All rights reserved.</p>
+        </footer>
       </body>
     </html>
   )
