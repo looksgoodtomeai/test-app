@@ -17,11 +17,12 @@ export default function Home() {
 
       <section style={{ marginTop: 80 }}>
         <h2 style={{ marginBottom: 24 }}>Why teams love TestApp</h2>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 24 }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 24 }}>
           {[
             { title: 'Sprint Planning', desc: 'Drag-and-drop sprint boards with velocity tracking.' },
             { title: 'Time Tracking', desc: 'Built-in timers so you know where hours go.' },
             { title: 'Integrations', desc: 'Connect GitHub, Slack, Figma, and 50+ tools.' },
+            { title: 'AI Insights', desc: 'Get smart recommendations on sprint velocity and blockers.' },
           ].map((f) => (
             <div key={f.title} style={{ background: '#fff', padding: 24, borderRadius: 12, boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }}>
               <h3>{f.title}</h3>
