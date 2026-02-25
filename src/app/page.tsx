@@ -6,8 +6,8 @@ export default function Home() {
       {/* Hero */}
       <section style={{ maxWidth: 900, margin: "0 auto", padding: "80px 24px 60px", textAlign: "center" }}>
         <Badge label="Now in beta" color="purple" />
-        <h1 style={{ fontSize: "3.2rem", marginTop: 16, marginBottom: 16, lineHeight: 1.15 }}>
-          Ship projects faster,<br />without the bloat
+        <h1 style={{ fontSize: "4rem", marginTop: 16, marginBottom: 16, lineHeight: 1.15 }}>
+          Ship projects faster 🚀,<br />without the bloat
         </h1>
         <p style={{ fontSize: "1.2rem", color: "#6b7280", marginBottom: 40, maxWidth: 600, margin: "0 auto 40px" }}>
           TestApp helps teams track tasks, manage sprints, and deliver on time.

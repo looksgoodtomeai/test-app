@@ -29,7 +29,7 @@ export function Button({ variant = "primary", size = "md", loading, children, di
       style={{
         ...variants[variant],
         ...sizes[size],
-        borderRadius: 8,
+        borderRadius: 12,
         fontWeight: 600,
         cursor: disabled || loading ? "not-allowed" : "pointer",
         opacity: disabled || loading ? 0.6 : 1,
