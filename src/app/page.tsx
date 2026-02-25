@@ -4,8 +4,8 @@ export default function Home() {
   return (
     <div>
       {/* Hero */}
-      <section style={{ maxWidth: 900, margin: "0 auto", padding: "80px 24px 60px", textAlign: "center" }}>
-        <Badge label="Now in beta" color="purple" />
+      <section style={{ maxWidth: 900, margin: "0 auto", padding: "100px 24px 80px", textAlign: "center" }}>
+        <Badge label="Now in public beta" color="purple" />
         <h1 style={{ fontSize: "3.2rem", marginTop: 16, marginBottom: 16, lineHeight: 1.15 }}>
           Ship projects faster,<br />without the bloat
         </h1>
