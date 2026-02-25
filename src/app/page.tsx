@@ -5,8 +5,8 @@ export default function Home() {
     <div>
       {/* Hero */}
       <section style={{ maxWidth: 900, margin: "0 auto", padding: "80px 24px 60px", textAlign: "center" }}>
-        <Badge label="Now in beta" color="purple" />
-        <h1 style={{ fontSize: "3.2rem", marginTop: 16, marginBottom: 16, lineHeight: 1.15 }}>
+        <Badge label="Now in public beta" color="purple" />
+        <h1 style={{ fontSize: "3.8rem", marginTop: 16, marginBottom: 16, lineHeight: 1.15 }}>
           Ship projects faster,<br />without the bloat
         </h1>
         <p style={{ fontSize: "1.2rem", color: "#6b7280", marginBottom: 40, maxWidth: 600, margin: "0 auto 40px" }}>
@@ -14,8 +14,8 @@ export default function Home() {
           Simple, fast, and built for developers.
         </p>
         <div style={{ display: "flex", gap: 16, justifyContent: "center" }}>
-          <a href="/pricing" style={{ background: "#6c63ff", color: "#fff", padding: "14px 32px", borderRadius: 8, fontWeight: 600, fontSize: "1rem" }}>Start Free Trial</a>
-          <a href="/about" style={{ border: "2px solid #6c63ff", color: "#6c63ff", padding: "14px 32px", borderRadius: 8, fontWeight: 600, fontSize: "1rem" }}>Learn More</a>
+          <a href="/pricing" style={{ background: "#2563eb", color: "#fff", padding: "14px 32px", borderRadius: 8, fontWeight: 600, fontSize: "1rem" }}>Start Free Trial</a>
+          <a href="/about" style={{ border: "2px solid #2563eb", color: "#2563eb", padding: "14px 32px", borderRadius: 8, fontWeight: 600, fontSize: "1rem" }}>Learn More</a>
         </div>
       </section>
 
@@ -51,7 +51,7 @@ export default function Home() {
               { metric: "4.8/5", label: "G2 Rating" },
             ].map((s) => (
               <div key={s.label}>
-                <div style={{ fontSize: "2.5rem", fontWeight: 700, color: "#6c63ff" }}>{s.metric}</div>
+                <div style={{ fontSize: "2.5rem", fontWeight: 700, color: "#2563eb" }}>{s.metric}</div>
                 <div style={{ color: "#9ca3af", marginTop: 4 }}>{s.label}</div>
               </div>
             ))}
@@ -81,10 +81,10 @@ export default function Home() {
       </section>
 
       {/* CTA */}
-      <section style={{ background: "#6c63ff", color: "#fff", padding: "60px 24px", textAlign: "center" }}>
+      <section style={{ background: "#2563eb", color: "#fff", padding: "60px 24px", textAlign: "center" }}>
         <h2 style={{ fontSize: "2rem", marginBottom: 12 }}>Ready to ship faster?</h2>
         <p style={{ opacity: 0.9, marginBottom: 32, fontSize: "1.1rem" }}>Start your free trial today. No credit card required.</p>
-        <a href="/pricing" style={{ background: "#fff", color: "#6c63ff", padding: "14px 36px", borderRadius: 8, fontWeight: 700, fontSize: "1rem" }}>Get Started Free</a>
+        <a href="/pricing" style={{ background: "#fff", color: "#2563eb", padding: "14px 36px", borderRadius: 8, fontWeight: 700, fontSize: "1rem" }}>Get Started Free</a>
       </section>
 
       {/* Footer */}
