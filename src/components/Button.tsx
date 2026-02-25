@@ -10,8 +10,8 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 const variants = {
-  primary: { background: "#6c63ff", color: "#fff", border: "none" },
-  secondary: { background: "transparent", color: "#6c63ff", border: "2px solid #6c63ff" },
+  primary: { background: "#4f46e5", color: "#fff", border: "none" },
+  secondary: { background: "transparent", color: "#4f46e5", border: "2px solid #6c63ff" },
   danger: { background: "#ef4444", color: "#fff", border: "none" },
   ghost: { background: "transparent", color: "#555", border: "1px solid #ddd" },
 };
