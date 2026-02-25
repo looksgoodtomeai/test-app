@@ -3,7 +3,7 @@
 import { ButtonHTMLAttributes, ReactNode } from "react";
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: "primary" | "secondary" | "danger" | "ghost";
+  variant?: "primary" | "secondary" | "danger" | "ghost" | "success";
   size?: "sm" | "md" | "lg";
   loading?: boolean;
   children: ReactNode;
@@ -14,6 +14,7 @@ const variants = {
   secondary: { background: "transparent", color: "#6c63ff", border: "2px solid #6c63ff" },
   danger: { background: "#ef4444", color: "#fff", border: "none" },
   ghost: { background: "transparent", color: "#555", border: "1px solid #ddd" },
+  success: { background: "#10b981", color: "#fff", border: "none" },
 };
 
 const sizes = {
@@ -29,7 +30,7 @@ export function Button({ variant = "primary", size = "md", loading, children, di
       style={{
         ...variants[variant],
         ...sizes[size],
-        borderRadius: 8,
+        borderRadius: 10,
         fontWeight: 600,
         cursor: disabled || loading ? "not-allowed" : "pointer",
         opacity: disabled || loading ? 0.6 : 1,
